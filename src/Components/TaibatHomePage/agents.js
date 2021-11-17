@@ -7,34 +7,63 @@ const Agents = () => {
   return (
     <Container>
       <Wrapper>
-        {data?.map((prop) => {
-          const { id, agentName, agentCompany, img, agentRating } = prop;
-          return (
-            <Card key={id}>
-              <AgentInfo>
-                <Image src={img} />
-                <AgentContact>
-                  <AgentCompany>
-                    <span>{<RiHome2Fill />}</span>
-                    {agentCompany}
-                  </AgentCompany>
-                  <AgentName>{agentName}</AgentName>
-                  <AgentRating>{agentRating}</AgentRating>
-                </AgentContact>
-              </AgentInfo>
-              <Button>Ask Question</Button>
-            </Card>
-          );
-        })}
+        <WrapperContent>
+          {data?.map((prop) => {
+            const { id, agentName, agentCompany, img, agentRating } = prop;
+            return (
+              <Card key={id}>
+                <AgentInfo>
+                  <Image src={img} />
+                  <AgentContact>
+                    <AgentCompany>
+                      <span>{<RiHome2Fill />}</span>
+                      {agentCompany}
+                    </AgentCompany>
+                    <AgentName>{agentName}</AgentName>
+                    <AgentRating>{agentRating}</AgentRating>
+                  </AgentContact>
+                </AgentInfo>
+                <Button>Ask Question</Button>
+              </Card>
+            );
+          })}
+        </WrapperContent>
+
+        <Button1>Movoto San Francisco Office</Button1>
       </Wrapper>
     </Container>
   );
 };
 export default Agents;
 
+const WrapperContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const AgentContact = styled.div`
-  // width: 15]0px;
+  // width: 150px;
   margin: 0 10px;
+`;
+
+const Button1 = styled.div`
+  width: 250px;
+  height: 40px;
+  background: white;
+  margin: 15px auto;
+  font-size: 15px;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  border: 1px solid lightgrey;
+  justify-content: center;
+  align-items: center;
+  transition: all 350ms;
+  :hover {
+    cursor: pointer;
+    background: whitesmoke;
+  }
 `;
 
 const Button = styled.div`
@@ -80,7 +109,7 @@ const Image = styled.img`
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  background: brown;
+
   margin: 0 10px;
 `;
 const AgentInfo = styled.div`
@@ -105,6 +134,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 const Container = styled.div`
   width: 100%;

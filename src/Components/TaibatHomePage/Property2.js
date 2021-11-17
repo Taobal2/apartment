@@ -1,16 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { data } from "./propertyData";
-import { FiHeart } from "react-icons/fi";
-import { FaHeart } from "react-icons/fa";
+import Toggle from "./toggle";
 
 const Property2 = () => {
-  const [toggle, setToggle] = React.useState(false);
-
-  const onToggler = () => {
-    setToggle(!toggle);
-    // ! is the opposite of the initial state which will be true in this case
-  };
   return (
     <Container>
       <Wrapper>
@@ -34,9 +27,7 @@ const Property2 = () => {
                 <Image src={img} />
                 <Time>New {time} Hours</Time>
                 <Open>Open {open}</Open>
-                <Icon onMouseEnter={onToggler} onMouseLeave={onToggler}>
-                  {toggle ? <FaHeart /> : <FiHeart />}
-                </Icon>
+                <Toggle />
                 <Price>₦ {price} </Price>
                 <Details>
                   <p>
@@ -132,21 +123,6 @@ const Open = styled.button`
 
   :hover {
     cursor: pointer;
-  }
-`;
-
-const Icon = styled.div`
-  position: absolute;
-  right: 10px;
-  color: white;
-  margin-top: 5px;
-  font-size: 20px;
-  transition: all 400ms;
-  transform: scale(1);
-
-  :hover {
-    cursor: pointer;
-    transform: scale(1.03);
   }
 `;
 

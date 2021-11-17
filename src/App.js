@@ -1,12 +1,14 @@
-import React from 'react'
-import HomePage from './Components/HomePage';
+import React from "react";
+import SamHomePage from "./Components/SamSalHomePage/samHomePage";
+import HomePage from "./Components/TaibatHomePage/HomePage";
 
 const App = () => {
   return (
     <div>
+      <SamHomePage />
       <HomePage />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

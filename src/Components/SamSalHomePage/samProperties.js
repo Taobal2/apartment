@@ -1,33 +1,32 @@
 import React from "react";
-import TaibatHomePage from "./taibatHomePage";
+import SamSalHomePage from "./samSalHomePage";
 import styled from "styled-components";
-import Property2 from "./Property2";
+import SamProperty2 from "./samProperty2";
 
-const Properties = () => {
+const SamProperties = () => {
   return (
     <div>
       <TitleHolder>
-        <Title>REAL ESTATE LISTINGS</Title>
+        <Title>THE LATEST LISTINGS</Title>
         <SubTitle>
-          Open Houses in <span>Nigeria</span>
+          New Homes for Sale in <span>Nigeria</span>
         </SubTitle>
       </TitleHolder>
-      <TaibatHomePage />
+      <SamSalHomePage />
       <TitleHolder style={{ marginTop: "50px" }}>
-        <Title>MOST RECENT REAL ESTATE LISTINGS</Title>
-        <SubTitleClose>
-          Close Houses in <span>Lagos</span>
-        </SubTitleClose>
+        <Title>MY SEARCHES</Title>
+        <SubTitleClose>Recently Viewed</SubTitleClose>
       </TitleHolder>
-      <Property2 />
+      <SamProperty2 />
     </div>
   );
 };
 
-export default Properties;
+export default SamProperties;
 
 const TitleHolder = styled.div`
   text-align: center;
+  margin-top: 50px;
 `;
 
 const Title = styled.div`
@@ -52,14 +51,4 @@ const SubTitleClose = styled.div`
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 1px;
-
-  span {
-    color: blue;
-    transition: all 350ms;
-
-    :hover {
-      cursor: pointer;
-      color: black;
-    }
-  }
 `;

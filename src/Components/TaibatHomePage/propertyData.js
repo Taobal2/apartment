@@ -16,6 +16,7 @@ export const data = [
     address: "132 Obodo venue, Hoston Texas",
     squareFeet: "House for sale",
     details: "",
+    like: true,
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const data = [
     address: "flat 4, Tina crescent, Abu dhabi, Dubia",
     squareFeet: "703/sqft",
     details: "con...",
+    like: true,
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ export const data = [
     address: "Venue Ave, New Jersey",
     squareFeet: "723/sqft",
     details: "H...",
+    like: true,
   },
   {
     id: 4,
@@ -55,5 +58,6 @@ export const data = [
     address: "11145 Toyeebah St, 43 San fransico",
     squareFeet: "House for sale",
     details: "Con...",
+    like: true,
   },
 ];
