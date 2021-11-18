@@ -108,6 +108,7 @@ const Text = styled.div`
   font-size: 55px;
   line-height: 62px;
   color: white;
+  // color:grey
 `;
 
 const Nav = styled.div`
