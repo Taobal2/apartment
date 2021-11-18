@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <Container>
       <Wrapper>
-        <Button>
+        <Button href="mailto: lestinainternational@gmail.com" target="_target">
           <BsChat />
         </Button>
         <Properties />
@@ -28,7 +28,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div``;
 
-const Button = styled.div`
+const Button = styled.a`
   background: #000d6b;
 
   border-radius: 50%;
