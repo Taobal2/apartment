@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { data } from "./propertyData";
-import Toggle from "./toggle";
+import { data } from "./samPropertyData";
 
-const TaibatHomePage = () => {
+import Toggle from "../TaibatHomePage/toggle";
+
+const SamSalHomePage = () => {
   return (
     <Container>
       <Wrapper>
@@ -52,7 +53,7 @@ const TaibatHomePage = () => {
   );
 };
 
-export default TaibatHomePage;
+export default SamSalHomePage;
 
 const Container = styled.div`
   width: 100%;

@@ -1,7 +1,7 @@
 import img1 from "./Asset/female.jpeg";
 import img2 from "./Asset/bright.jpeg";
 import img3 from "./Asset/female3.jpeg";
-import img4 from "./Asset/man2.jpeg";
+import img4 from "./Asset/taibs.jpeg";
 
 export const data = [
   {
@@ -20,7 +20,7 @@ export const data = [
   },
   {
     id: 3,
-    agentName: "Veronica Ginika",
+    agentName: "Veronica Makanaki",
     agentCompany: "Motovo Broker",
     img: img3,
     agentRating: "4.6/5 ★★★★☆",
